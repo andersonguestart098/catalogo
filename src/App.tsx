@@ -1,5 +1,5 @@
 import Navbar from "./components/NavBar";
-import Catalog from "./components/catalogo";
+import Catalog from "./components/Catalogo";
 
 const App: React.FC = () => {
   return (
