@@ -24,18 +24,6 @@ const products = [
     logo: "/logoHunter.png",
     image: "/forro.jpg",
   },
-  {
-    id: 2,
-    name: "Forro Metálico",
-    type: "Metálico",
-    brand: "Hunter Douglas",
-    availability: "Indisponível",
-    color: "Prata",
-    thickness: "10mm",
-    weight: "3,0kg/m²",
-    logo: "/logoHunter.png",
-    image: "/forro2.png",
-  },
 ];
 
 const Catalog: React.FC = () => {

@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
                 letterSpacing: "1px",
               }}
             >
-              Forros
+              Forro
             </Typography>
           </Box>
 
@@ -59,30 +59,9 @@ const Navbar: React.FC = () => {
               display: "flex",
               alignItems: "center", // Centraliza o botão verticalmente
             }}
-          >
-            <Button
-              sx={{
-                color: "#333", // Texto escuro
-                fontWeight: "500",
-                textTransform: "none",
-                fontFamily: "Roboto, sans-serif",
-                padding: "0.5rem 1.2rem",
-                backgroundColor: "#f5f5f5", // Fundo cinza claro
-                borderRadius: "8px",
-                border: "1px solid rgba(0, 0, 0, 0.1)",
-                "&:hover": {
-                  backgroundColor: "#eaeaea", // Hover com contraste sutil
-                },
-              }}
-            >
-              Contato
-            </Button>
-          </Box>
+          ></Box>
         </Toolbar>
       </AppBar>
-
-      {/* Espaço para evitar que o conteúdo fique sobreposto ao Navbar fixo */}
-      <Box sx={{ height: 65 }}></Box>
     </>
   );
 };
