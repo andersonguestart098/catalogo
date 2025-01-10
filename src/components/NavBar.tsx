@@ -32,11 +32,11 @@ const Navbar: React.FC = () => {
             }}
           >
             <img
-              src="/teto.png" // Caminho da imagem
+              src="/cimento.png" // Caminho da imagem
               alt="Ícone Teto"
               style={{
-                width: 30,
-                height: 30,
+                width: 40,
+                height: 40,
                 marginRight: "0.5rem", // Espaço entre o ícone e o texto
               }}
             />
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
                 letterSpacing: "1px",
               }}
             >
-              Forro
+              Autonivelante
             </Typography>
           </Box>
 

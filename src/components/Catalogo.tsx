@@ -14,15 +14,17 @@ import SendIcon from "@mui/icons-material/Send";
 const products = [
   {
     id: 1,
-    name: "Forro Acústico",
-    type: "Acústico",
+    name: "Autonivelante Base",
+    type: "Autonivelante",
+    color: "Cinza",
     brand: "Hunter Douglas",
     availability: "Disponível",
-    color: "Branco",
-    thickness: "12mm",
+    thickness: "10mm",
     weight: "3,4kg/m²",
-    logo: "/logoHunter.png",
-    image: "/forro.jpg",
+    use: "Interno",
+    base: "Contra Pisos, Concretos e Pisos Cerâmicos",
+    logo: "/protec.png",
+    image: "/cola.png",
   },
 ];
 
@@ -48,6 +50,8 @@ const Catalog: React.FC = () => {
     color: string;
     thickness: string;
     weight: string;
+    use: string;
+    base: string;
   }) => {
     const phoneNumber = "51982961257"; // Número do WhatsApp
     const message =
@@ -57,7 +61,9 @@ const Catalog: React.FC = () => {
       `- Disponibilidade: ${product.availability}\n` +
       `- Cor: ${product.color}\n` +
       `- Espessura: ${product.thickness}\n` +
-      `- Peso: ${product.weight}\n\n` +
+      `- Peso: ${product.weight}\n` +
+      `- Uso: ${product.use}\n` +
+      `- Bases de Aplicação: ${product.base}\n\n` +
       `Gostaria de obter mais informações sobre este produto.`;
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -170,7 +176,7 @@ const Catalog: React.FC = () => {
                   <strong>Cor:</strong> {product.color}
                 </Typography>
                 <Typography variant="body2" sx={{ marginBottom: "0.5rem" }}>
-                  <strong>Espessura:</strong> {product.thickness}
+                  <strong>Espessura:</strong> Até {product.thickness}
                 </Typography>
                 <Typography
                   variant="body2"
